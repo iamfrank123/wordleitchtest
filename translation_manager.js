@@ -1,5 +1,5 @@
 const TranslationManager = (function () {
-    let currentLang = localStorage.getItem('language') || 'it';
+    let currentLang = localStorage.getItem('language') || 'en';
 
     function t(key, params = {}) {
         const langDict = TRANSLATIONS[currentLang] || TRANSLATIONS['it'];
